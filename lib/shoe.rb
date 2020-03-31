@@ -6,7 +6,11 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
-    if BRANDS.any(|word|)
+    if BRANDS.any?{|word| word = @brand}
+      
+    else
+      BRANDS << @brand
+    end
   end
 
   def cobble
